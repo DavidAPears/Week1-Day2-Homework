@@ -61,14 +61,13 @@ def number_to_full_month_name(number)
 end
 
 
-def number_to_short_month_name(number)
-   case number
-    when 1
-      "January".slice(0, 2)
-    when 4
-      "April".slice(0, 2)
-    when 10
-      "October".slice(0, 2)
+def number_to_short_month_name(month)
+  case
+    when month == 1
+      return "Jan"
+    when month == 4
+      return "Apr"
+    when month == 10
+      return "Oct"
     end
-      return
 end
